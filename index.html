@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animación para principiantes</title>
+
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Aprende a animar</div>
+        <ul class="nav-links">
+            <li><a href="#home">Introducción</a></li>
+            <li><a href="#portfolio">12 Principios</a></li>
+            <li><a href="#artists">Herramientas</a></li>
+            <li><a href="#location">Ubicación</a></li> </ul>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title neon-text">Animación para <span class="neon-cyan">Principiantes</span></h1>
+            <p class="hero-subtitle">Descubre las maravillas de la animación 2D de forma fácil y rápida</p>
+        </div>
+    </section>
+
+    <section class="instagram-section">
+        <h2 class="section-title">Estilos y <span class="neon-pink">Personajes</span></h2>
+        
+        <div class="instagram-description">
+            <p>Para comenzar a realizar animaciones, es importante tener muy desarrollada la fase de preproducción.</p>
+            <p>Aunque no ahondemos en esta fase, sí es importante resaltar lo más básico: diseño de los personajes, estilo, escenario, detalles, movimientos y dimensiones.</p>
+        </div>
+
+        <div class="instagram-feed" id="instagramFeed"></div>
+
+        <p style="text-align: center; margin-top: 20px;">Es muy importante tener todo separado y bien organizado para poder realizar un buen trabajo.</p>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <h2 class="section-title">12 <span class="neon-cyan">PRINCIPIOS</span></h2>
+        <div class="filter-buttons">
+            <a href="principio1.html" class="filter-btn">Aplastar y estirar</a>
+            <a href="principio2.html" class="filter-btn">Anticipación</a>
+            <a href="principio3.html" class="filter-btn">Desacelerar y acelerar</a>
+            <a href="principio4.html" class="filter-btn">Arcos</a>
+            <a href="principio5.html" class="filter-btn">Exageración</a>
+            <a href="principio6.html" class="filter-btn">Sincronización y espaciado</a>
+            <a href="principio7.html" class="filter-btn">Puesta en escena</a>
+            <a href="principio8.html" class="filter-btn">Animación directa y pose a pose</a>
+            <a href="principio9.html" class="filter-btn">Acción continuada y superpuesta</a>
+            <a href="principio10.html" class="filter-btn">Acción secundaria</a>
+            <a href="principio11.html" class="filter-btn">Dibujo sólido</a>
+            <a href="principio12.html" class="filter-btn">Atractivo</a>
+        </div>
+    </section>
+
+    <section id="artists" class="artists-section">
+        <h2 class="section-title">Herramientas a utilizar <span class="neon-cyan">(Adobe)</span></h2>
+        <div class="artists-container">
+            
+            <div class="artist-card">
+                <a href="herramientas.html" style="text-decoration: none; color: inherit;">
+                    <div class="artist-image-container">
+                        <div class="artist-image" style="background-image: url('images/After_logo.png');"></div>
+                    </div>
+                    <h3 class="artist-name">After Effects</h3>
+                </a>
+            </div>
+            
+            <div class="artist-card">
+                <a href="Animate.html" style="text-decoration: none; color: inherit;">
+                    <div class="artist-image-container">
+                        <div class="artist-image" style="background-image: url('images/Animate_logo.png');"></div>
+                    </div>
+                    <h3 class="artist-name">Adobe Animate</h3>
+                </a>
+            </div>
+            
+            <div class="artist-card">
+                <a href="Photoshop.html" style="text-decoration: none; color: inherit;">
+                    <div class="artist-image-container">
+                        <div class="artist-image" style="background-image: url('images/Photoshop_logo.png');"></div>
+                    </div>
+                    <h3 class="artist-name">Adobe Photoshop</h3>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="location" class="location-section">
+        <h2 class="section-title">Nuestra <span class="neon-pink">Ubicación</span></h2>
+        
+        <div class="location-container">
+            <div class="location-info">
+                <p><i class="fas fa-map-marker-alt" style="color: #0ff;"></i> Carrer Antonio Machado, 84, 03204 Elx, Alicante</p>
+                <a href="https://www.google.com/maps/dir/?api=1&destination=Carrer+Antonio+Machado,+84,+03204+Elx,+Alicante" 
+                   target="_blank" 
+                   class="filter-btn" 
+                   style="margin-top: 20px; display: inline-block;">
+                   Cómo llegar
+                </a>
+            </div>
+
+            <div class="map-box">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3133.0445543166826!2d-0.702220323447953!3d38.254719584348255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd63b46fc0897d25%3A0x6b04323e0f0c0f0!2sCarrer%20Antonio%20Machado%2C%2084%2C%2003204%20Elx%2C%20Alicante!5e0!3m2!1ses!2ses!4v1715600000000!5m2!1ses!2ses" 
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3 class="footer-logo">Aprende a animar</h3>
+                <p class="footer-tagline">La web que te explica paso a paso como aprender a animar en 2D</p>
+            </div>
+            
+            <div class="footer-links">
+                <h4 class="footer-heading">Categorías</h4>
+                <ul>
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#portfolio">12 Principios</a></li>
+                    <li><a href="#artists">Herramientas</a></li>
+                    <li><a href="#location">Ubicación</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-contact">
+                <h4 class="footer-heading">Contacto</h4>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> silviamarchena2004@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© Aprende a animar.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplastar y Estirar - 12 Principios</title>
+
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Estilos específicos para la lectura cómoda */
+        body {
+            background-color: #050505;
+            color: #e0e0e0;
+            line-height: 1.8;
+            padding-top: 100px;
+        }
+
+        .content-wrapper {
+            max-width: 800px; /* Ancho más estrecho para que sea fácil de leer */
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .principle-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .principle-title {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .description-text {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            text-align: justify;
+        }
+
+        /* Contenedor del vídeo */
+        .video-box {
+            width: 100%;
+            border-radius: 15px;
+            overflow: hidden;
+            border: 2px solid #ff007f; /* Borde rosa neón */
+            box-shadow: 0 0 25px rgba(255, 0, 127, 0.3);
+            background-color: #000;
+        }
+
+        video {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 50px;
+            color: #0ff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .back-link:hover {
+            text-shadow: 0 0 10px #0ff;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Aprende a animar</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Volver al Inicio</a></li>
+        </ul>
+    </nav>
+
+    <main class="content-wrapper">
+        <header class="principle-header">
+            <h1 class="principle-title neon-text">Aplastar y <span class="neon-pink">Estirar</span></h1>
+            <p class="hero-subtitle">(Squash and Stretch)</p>
+        </header>
+
+        <section class="description-section">
+            <p class="description-text">
+                El principio de <strong>Aplastar y Estirar</strong> es considerado el más importante de los 12 principios de la animación. Su objetivo principal es dar una sensación de peso y flexibilidad a los objetos dibujados. Sin este principio, los movimientos parecerían rígidos y mecánicos.
+            </p>
+            
+            <p class="description-text">
+                Cuando un objeto se mueve, su forma reacciona a las fuerzas que actúan sobre él. Por ejemplo, una pelota saltando se estira mientras cae (debido a la velocidad) y se aplasta al impactar contra el suelo. Lo más importante es que, aunque la forma cambie, el <strong>volumen total debe permanecer constante</strong>. Si estiras algo demasiado sin hacerlo más delgado, parecerá que está creciendo, no estirándose.
+            </p>
+        </section>
+
+        <section class="video-section">
+            <div class="video-box">
+                <video controls>
+                    <source src="video/salto.mp4" type="video/mp4">
+                </video>
+            </div>
+            <p style="text-align: center; margin-top: 15px; font-style: italic; color: #888;">
+                Demostración práctica: El principio aplicado en un salto dinámico.
+            </p>
+        </section>
+
+        <a href="index.html#portfolio" class="back-link">
+            <i class="fas fa-arrow-left"></i> Volver a los principios
+        </a>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-bottom">
+            <p>&copy; Aprende a animar.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

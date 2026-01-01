@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animación directa y pose a pose - 12 Principios</title>
+
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Estilos específicos para la lectura cómoda */
+        body {
+            background-color: #050505;
+            color: #e0e0e0;
+            line-height: 1.8;
+            padding-top: 100px;
+        }
+
+        .content-wrapper {
+            max-width: 800px; /* Ancho más estrecho para que sea fácil de leer */
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .principle-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .principle-title {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .description-text {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            text-align: justify;
+        }
+
+        /* Contenedor del vídeo */
+        .video-box {
+            width: 100%;
+            border-radius: 15px;
+            overflow: hidden;
+            border: 2px solid #ff007f; /* Borde rosa neón */
+            box-shadow: 0 0 25px rgba(255, 0, 127, 0.3);
+            background-color: #000;
+        }
+
+        video {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 50px;
+            color: #0ff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .back-link:hover {
+            text-shadow: 0 0 10px #0ff;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Aprende a animar</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Volver al Inicio</a></li>
+        </ul>
+    </nav>
+
+    <main class="content-wrapper">
+        <header class="principle-header">
+            <h1 class="principle-title neon-text"> Animación directa y Pose a pose </h1>
+            <p class="hero-subtitle">(Straight ahead and pose to pose)</p>
+        </header>
+
+        <section class="description-section">
+            <p class="description-text">
+                El principio de <strong> Animación directa y Pose a pose. </strong>Son dos aproximaciones diferentes a la hora de animar: en ambas se conoce la acción a desarrollar, pero en cada método se trabaja de forma diferente.
+
+                <strong> Animación Directa </strong>: creación de las poses de principio a fin, de una manera correlativa. Se anima de acuerdo al cálculo de donde debería encontrarse cada dibujo en un momento determinado del tiempo. Esto permite que incluso en un estado muy básico de la animación, ya podamos tener bastante claro el aspecto que esta tendrá una vez finalizada. Este método aporta espontaneidad y es más experimental. Se recomienda para formas más orgánicas o FX.
+
+            </p>
+
+            <p class= "description-text">
+            <strong> Animación Pose a Pose: </strong> se realiza primero con la creación, a lo largo de la duración de una escena, de las poses claves (keyframes) que completan la acción, permitiendo prever de antemano si al personaje le dará tiempo de hacer todas las acciones requeridas en el plano.
+            Una vez tenemos claro el diseño básico de la animación podremos empezar a refinar y aplicar el resto de los principios.En la animación clásica, el animador estudiaba y planeaba mucho cada pose clave, aplicando los principios de la animación, y pasaba la escena al intercalador, que realizaba los dibujos intermedios.
+
+            </p>
+        </section>
+
+        <section class="video-section">
+            <div class="video-box">
+                <video controls>
+                    <source src="video/pose.mp4" type="video/mp4">
+                </video>
+            </div>
+            <p style="text-align: center; margin-top: 15px; font-style: italic; color: #888;">
+                Demostración práctica: Cómo afecta la puesta en escena a la esencia de la animación.
+            </p>
+        </section>
+
+        <a href="index.html#portfolio" class="back-link">
+            <i class="fas fa-arrow-left"></i> Volver a los principios
+        </a>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-bottom">
+            <p>&copy; Aprende a animar.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

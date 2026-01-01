@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía Adobe Animate - Aprende a animar</title>
+
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* RESET Y BASE */
+        body {
+            background-color: #050505;
+            color: white;
+            margin: 0;
+            padding-top: 100px; /* Evita que la navbar pise el contenido */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .main-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* HEADER Y BANNER */
+        .tool-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .tool-banner {
+            width: 100%;
+            height: 450px;
+            /* REEMPLAZA ESTE ENLACE CON TU IMAGEN */
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(5,5,5,1)), url('images/Animate_logo.png'); 
+            background-size: cover;
+            background-position: center;
+            border-radius: 20px;
+            border: 1px solid rgba(0, 255, 255, 0.5);
+            box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
+            margin-bottom: 50px;
+        }
+
+        /* GRID DE RECUADROS */
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        /* DISEÑO DE LAS TARJETAS (RECUADROS CHULOS) */
+        .info-card {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 30px;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s ease;
+        }
+
+        /* Borde lateral de color neón */
+        .info-card::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 5px;
+            background: #ff007f; /* Rosa neón por defecto */
+            box-shadow: 0 0 15px #ff007f;
+        }
+
+        /* Diferentes colores para variar el diseño */
+        .info-card.cyan::before { background: #0ff; box-shadow: 0 0 15px #0ff; }
+
+        .info-card:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.07);
+            border-color: rgba(255, 255, 255, 0.3);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .info-card h3 {
+            color: #fff;
+            font-size: 1.4rem;
+            margin-top: 0;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .info-card h3 i {
+            color: #0ff; /* Iconos en cyan */
+        }
+
+        .info-card p {
+            line-height: 1.7;
+            color: #ccc;
+            font-size: 0.95rem;
+        }
+
+        /* BOTÓN DE ADOBE DENTRO DE LA TARJETA */
+        .btn-adobe {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: transparent;
+            border: 1px solid #0ff;
+            color: #0ff;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-adobe:hover {
+            background: #0ff;
+            color: #000;
+            box-shadow: 0 0 20px #0ff;
+        }
+
+        /* TÍTULOS NEÓN */
+        .section-title {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .neon-pink { color: #ff007f; text-shadow: 0 0 10px #ff007f; }
+        .neon-cyan { color: #0ff; text-shadow: 0 0 10px #0ff; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Aprende a animar</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Volver al Inicio</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-container">
+        
+        <header class="tool-header">
+            <h1 class="hero-title">Adobe <span class="neon-cyan">Animate</span></h1>
+            <p class="hero-subtitle">Anima tus historias y dales vida frame a frame.</p>
+        </header>
+
+        <div class="tool-banner"></div>
+
+        <section class="explanation">
+            <h2 class="section-title">Guía de <span class="neon-pink">Uso Básico</span></h2>
+            
+            <div class="info-grid">
+                
+                <div class="info-card cyan">
+                    <h3> La importancia de los FPS </h3>
+                    <p> Determinar los FPS es <strong> vital</strong>. Para que el trabajo no se vea muy realentizado o a demasiada velocidad se deberá ajustar los FPS (frames por segundo). </p>
+                </div>
+
+                <div class="info-card">
+                    <h3> Capas</h3>
+                    <p> Animate es la mezcla perfecta entre Photoshop y After. Reutiliza las capas permitiéndote dibujar en ellas de forma vectorizada. Por lo que es importante separar todos los elementos por capas y extender su duración en fps (F5 +F6).</p>
+                </div>
+
+                <div class="info-card cyan">
+                    <h3> Símbolo </h3>
+                    <p> Para crear un símbolo es importante tener seleccionada la capa o el conjunto de capas requerido y pulsar F8, el programa mostrará toda animación realizada dentro del símbolo en el escenario general. </p>
+                </div>
+
+                <div class="info-card">
+                    <h3> Consejo </h3>
+                    <p> Los bocetos son <strong> la clave.</strong> Es importante que exista una coherencia en el movimiento, peso, flexibilidad, para ello, crearse unas guías, diseñarse una ruta de movimiento y una pauta hará que el movimiento sea ligero y creíble.</p>
+                </div>
+
+                <div class="info-card cyan">
+                    <h3> Exportar</h3>
+                    <p>Usa los símbolos <strong> y el escenario</strong> Utilizando ambos, puedes ajustar los diferentes elementos a un espacio y que al exportarlo en mp4 no se vea muy grande o pequeño. </p>
+                </div>
+
+                <div class="info-card" style="border-left-color: #0ff;">
+                    <h3> Descarga Oficial</h3>
+                    <p>¿Aún no lo tienes? Puedes conseguir una versión de prueba o suscribirte al plan de Creative Cloud en el sitio oficial.</p>
+                    <a href="https://www.adobe.com/es/products/animate.html" target="_blank" class="btn-animate">
+                        Ver planes de Adobe 
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer" style="margin-top: 100px; padding: 40px 0; border-top: 1px solid rgba(255,255,255,0.1);">
+        <div class="main-container" style="text-align: center;">
+            <h3 class="footer-logo">Aprende a animar</h3>
+            <p>&copy; 2024 - Guía práctica de animación 2D</p>
+            <p style="font-size: 0.8rem; color: #666;">silviamarchena2004@gmail.com</p>
+        </div>
+    </footer>
+
+</body>
+</html>
